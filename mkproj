@@ -9,7 +9,7 @@ if [ "$1" = "--version" ]; then
     exit 0
 fi
 # Look for -p -g -v flag 
-while getopts "fgv" opt; do
+while getopts "fgvh" opt; do
   case $opt in
     f) FORCE_MODE=true ;;
     g) GIT=true;;
